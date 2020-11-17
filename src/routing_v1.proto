@@ -9,3 +9,10 @@ message routing_v1 {
     repeated bytes subnets = 5;
     uint32 nonce = 6;
 }
+
+message router_v1_response {
+    oneof msg {
+        routing_v1 response = 2;
+    }
+
+}
