@@ -11,8 +11,5 @@ message routing_v1 {
 }
 
 message routing_v1_response {
-    oneof msg {
-        routing_v1 response = 2;
-    }
-
+  repeated routing_v1 response = 1;
 }
