@@ -11,5 +11,6 @@ message routing_v1 {
 }
 
 message routing_v1_response {
-  repeated routing_v1 response = 1;
+  repeated routing_v1 routes = 1;
+  bytes attestation = 2;
 }
