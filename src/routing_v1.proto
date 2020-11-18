@@ -7,10 +7,10 @@ message routing_v1 {
     repeated bytes router_addresses = 3;
     repeated bytes filters = 4;
     repeated bytes subnets = 5;
-    uint32 nonce = 6;
 }
 
 message routing_v1_response {
   repeated routing_v1 routes = 1;
-  bytes attestation = 2;
+  bytes signature = 2;
+  uint64 height = 3;
 }
