@@ -13,4 +13,5 @@ message routing_v1_response {
   repeated routing_v1 routes = 1;
   bytes signature = 2;
   uint64 height = 3;
+  bytes action = 4;
 }
