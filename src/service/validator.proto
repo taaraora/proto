@@ -17,8 +17,8 @@ message address {
 
 message routing_response {
   oneof msg {
-    routing_update = 1;
-    height_update = 2;
+    routing_update routing_update = 1;
+    height_update height_update = 2;
   }
 }
 
@@ -29,8 +29,8 @@ message routing_update {
 }
 
 message height_update {
-  uint64 height = 2;
-  bytes signature = 3;
+  uint64 height = 1;
+  bytes signature = 2;
 }
 
 message routing_request { uint64 height = 1; }
