@@ -76,9 +76,16 @@ message blockchain_txn {
         blockchain_txn_consensus_group_failure_v1 consensus_group_failure = 33;
         blockchain_txn_rewards_v2 rewards_v2 = 34;
         blockchain_txn_assert_location_v2 assert_location_v2 = 35;
+        // next txn field = 37
     }
+    blockchain_token_cost_v1 cost = 36;
 }
 
 message blockchain_txn_bundle_v1 {
   repeated blockchain_txn transactions = 1;
+}
+
+message blockchain_token_cost_v1 {
+    uint64 hnt_burned = 1;
+    uint64 dc_used = 2;
 }
